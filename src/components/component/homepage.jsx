@@ -63,8 +63,8 @@ import { Card } from "@/components/ui/card-main"
               <div className="p-4">
                 <h2 className="text-lg font-semibold">Must Parking Spot</h2>
                 <p className="text-sm text-gray-600 mt-2">
-                  University conferences are the vibrant platforms where knowledge meets curiosity,
-                  creating a fertile ground for intellectual growth and innovation
+                  The university parking spot, where convenience meets accessibility! Our well-designed parking facility provides students and staff with ample space to safely park their vehicles. With easy access to campus buildings and
+                 dedicated staff to assist, we strive to make your parking experience stress-free and efficient.
                 </p>
               </div>
             </Card>
