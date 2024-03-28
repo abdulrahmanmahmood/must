@@ -1,6 +1,6 @@
 
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card-main"
+import { Button } from "@/components/ui/button-main"
 import Link from "next/link"
 
 
@@ -12,7 +12,7 @@ export default function Component() {
         style={{
             color: "#1b2945",
           }}
-         className="font-bold text-xl">TSGS Hospital</span>
+         className="font-bold text-xl">Must Hospital</span>
         <div className="space-x-4">
           <Link className="text-gray-700 hover:text-gray-900" href="/">
             Home
@@ -20,7 +20,7 @@ export default function Component() {
           <Link className="text-gray-700 hover:text-gray-900" href="/hospital/reservation">
             Reservation
           </Link>
-          <Link className="text-gray-700 hover:text-gray-900" href="#">
+          <Link className="text-gray-700 hover:text-gray-900" href="/contact-us">
             Contact Us
           </Link>
           <a href='/signin'>
@@ -31,14 +31,14 @@ export default function Component() {
       <main className="px-8 py-4 bg-[#e5e7eb]">
         <section className="flex justify-between items-center">
           <div>
-          <img alt="Hospital Logo" className="h-25 w-25 mb-2" src="/logo.png" />
+          <img alt="Hospital Logo" className="h-25 w-25 mb-2" src="/logo.svg" />
             <h2
               className="text-3xl font-bold mb-2"
               style={{
                 color: "#1b2945",
               }}
             >
-Welcome to TSGS Hospital            </h2>
+Welcome to Must Hospital            </h2>
           </div>
           <Card className="bg-[#1b2945] text-white w-[350px]">
             <CardHeader>

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-main"
 
 export default function Component() {
   return (
@@ -8,10 +8,10 @@ export default function Component() {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <img
-              alt="TSGS Logo"
+              alt="Must Logo"
               className="h-16 w-16"
               height="60"
-              src="/logo.png"
+              src="/logo.svg"
               style={{
                 aspectRatio: "60/60",
                 objectFit: "cover",
@@ -26,7 +26,7 @@ export default function Component() {
             <a className="text-[#1b2945] hover:text-opacity-75" href="/parking">
               Parking
             </a>
-            <a className="text-[#1b2945] hover:text-opacity-75" href="/event">
+            <a className="text-[#1b2945] hover:text-opacity-75" href="/events">
               Event
             </a>
             <a className="text-[#1b2945] hover:text-opacity-75" href="/contact-us">

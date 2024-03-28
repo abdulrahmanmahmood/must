@@ -4,7 +4,7 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-main"
 
 export default function Component() {
   return (
@@ -18,19 +18,19 @@ export default function Component() {
       <nav className="absolute top-0 left-0 right-0 flex justify-between items-center p-4">
         <div className="flex items-center space-x-4">
           <ParkingSquareIcon className="text-white h-6 w-6" />
-          <span className="text-xl font-bold text-white">TSGS PARKING</span>
+          <span className="text-xl font-bold text-white">Must PARKING</span>
         </div>
         <div className="flex items-center space-x-4">
-          <Link className="text-white hover:text-gray-300" href="#">
+          <Link className="text-white hover:text-gray-300" href="/">
             Home
           </Link>
-          <Link className="text-white hover:text-gray-300" href="#">
+          <Link className="text-white hover:text-gray-300" href="/signin">
             LOGIN
           </Link>
           <Link className="text-white hover:text-gray-300" href="#">
             Spots
           </Link>
-          <Link className="text-white hover:text-gray-300" href="#">
+          <Link className="text-white hover:text-gray-300" href="/contact-us">
             Contact US
           </Link>
         </div>

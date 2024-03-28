@@ -1,7 +1,7 @@
 
-import { Button } from "@/components/ui/button"
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button-main"
+import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card-main"
+import { Input } from "@/components/ui/input-main"
 
 export function Newpass() {
   return (
@@ -10,10 +10,10 @@ export function Newpass() {
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <img
-              alt="TSGS Logo"
+              alt="Must Logo"
               className="h-16 w-16"
               height="60"
-              src="/logo.png"
+              src="/logo.svg"
               style={{
                 aspectRatio: "60/60",
                 objectFit: "cover",
@@ -28,7 +28,7 @@ export function Newpass() {
             <a className="text-[#1b2945] hover:text-opacity-75" href="/parking">
               Parking
             </a>
-            <a className="text-[#1b2945] hover:text-opacity-75" href="/event">
+            <a className="text-[#1b2945] hover:text-opacity-75" href="/events">
               Event
             </a>
             <a className="text-[#1b2945] hover:text-opacity-75" href="/contact-us">

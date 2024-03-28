@@ -1,12 +1,12 @@
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button-main"
 
 export default function Component() {
   return (
     <div className="bg-gray-100">
       <nav className="bg-white py-4 px-8 flex justify-between items-center">
-        <span className="font-bold text-xl">TSGS Hospital</span>
+        <span className="font-bold text-xl">Must Hospital</span>
         <div className="space-x-4">
           <Link className="text-gray-700 hover:text-gray-900" href="/">
             Home
@@ -14,7 +14,7 @@ export default function Component() {
           <Link className="text-gray-700 hover:text-gray-900" href="/hospital/reservation">
             Reservation
           </Link>
-          <Link className="text-gray-700 hover:text-gray-900" href="#">
+          <Link className="text-gray-700 hover:text-gray-900" href="/contact-us">
             Contact Us
           </Link>
           <a href='/signin'>
@@ -30,9 +30,11 @@ export default function Component() {
       >
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Meet the Best Hospital</h1>
         <p className="text-xl text-gray-600 mb-8">Take Your Place Now</p>
+        <a href="/hospital/reservation">
         <Button className="bg-yellow-500 hover:bg-yellow-600 text-white" variant="default">
           Make a Reservation
         </Button>
+        </a>
       </div>
       <section className="bg-gray-200 py-8">
         <div className="max-w-6xl mx-auto px-8">
