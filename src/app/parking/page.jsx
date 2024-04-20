@@ -3,13 +3,14 @@
  * @see https://v0.dev/t/ZA5xX7ePNkl
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import { Button } from "@/components/ui/button-main"
+import Link from "next/link";
+import { Button } from "@/components/ui/button-main";
+import Image from "next/image";
 
 export default function Component() {
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center"
+      className="relative w-full h-screen bg-cover bg-center pt-[200px]"
       style={{
         backgroundImage: "url('/spot.jpeg')",
       }}
@@ -35,14 +36,74 @@ export default function Component() {
           </Link>
         </div>
       </nav>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <h1 className="mb-4 text-2xl font-bold text-white">
-          Navigate with confidence, find your car spot effortlessly, and be on your way.
-        </h1>
-        <Button className="bg-[#1b2945] text-white">LOGIN</Button>
+
+      <div className="w-[90%]  mx-auto  justify-between flex flex-row">
+        <div className="relative ">
+          <Image
+            src={"/parking1.jpg"}
+            width={400}
+            height={400}
+            alt="parking1"
+          />
+          <div className="">
+            <Link
+              href="/login"
+              className=" text-white absolute top-[20%] right-[60%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+            >
+              Entry
+            </Link>
+            <Link
+              href="/"
+              className=" text-white absolute top-[20%] right-[20%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+            >
+              Exit
+            </Link>
+          </div>
+        </div>
+
+        <div className="relative ">
+          <Image
+            src={"/parking2.jpg"}
+            width={350}
+            height={350}
+            alt="parking1"
+          />
+          <Link
+            href="/login"
+            className=" text-white absolute top-[20%] right-[60%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+          >
+            Entry
+          </Link>{" "}
+          <Link
+            href="/"
+            className=" text-white absolute top-[20%] right-[20%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+          >
+            Exit
+          </Link>
+        </div>
+        <div className="relative ">
+          <Image
+            src={"/parking3.jpg"}
+            width={350}
+            height={350}
+            alt="parking1"
+          />
+          <Link
+            href="/login"
+            className=" text-white absolute top-[20%] right-[60%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+          >
+            Entry
+          </Link>{" "}
+          <Link
+            href="/"
+            className=" text-white absolute top-[20%] right-[20%] shadow-2xl bg-slate-500 p-3 rounded-xl text-3xl"
+          >
+            Exit
+          </Link>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 function ParkingSquareIcon(props) {
@@ -62,5 +123,5 @@ function ParkingSquareIcon(props) {
       <rect width="18" height="18" x="3" y="3" rx="2" />
       <path d="M9 17V7h4a3 3 0 0 1 0 6H9" />
     </svg>
-  )
+  );
 }

@@ -1,9 +1,25 @@
+'use client'
 
 import { Button } from "@/components/ui/button-main"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card-main"
 import { Input } from "@/components/ui/input-main"
+import { useState } from "react";
 
 export function Sginin() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    // Save email and password to localStorage
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+    // Redirect or perform other actions after login
+    // For example, redirect to the home page
+    // window.location.href = "/home";
+  };
+
   return (
     (<div key="1" className="flex flex-col min-h-screen bg-[#1b2945]">
       <nav className="bg-white p-4">
@@ -51,26 +67,26 @@ export function Sginin() {
             <CardTitle>Login</CardTitle>
           </CardHeader>
           <CardContent>
-            <form action="/action_page.php" method="get">
+            <form action="/" method="get">
               <div className="grid w-full gap-4">
                 <div className="flex flex-col space-y-1.5">
                   <label className="font-medium" htmlFor="email">
                     Email*
                   </label>
-                  <Input id="email" placeholder="Email" type="email" />
+                  <Input id="email" placeholder="Email" type="email" onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="flex flex-col space-y-1.5">
                   <label className="font-medium" htmlFor="password">
                     Password*
                   </label>
-                  <Input id="password" placeholder="Password" type="password" />
+                  <Input id="password" placeholder="Password" type="password" onChange={(e) => setPassword(e.target.value)} />
                   <a
                     className="text-sm text-[#1b2945] hover:text-opacity-75 self-end mt-1"
                     href="signin/forgetpassword">
                     Forgot your password?
                   </a>
                 </div>
-                <Button className="bg-[#1b2945] text-white">Login</Button>
+                <Button className="bg-[#1b2945] text-white"  onClick={handleLogin}>Login</Button>
               </div>
             </form>
           </CardContent>

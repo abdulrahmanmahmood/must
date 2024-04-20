@@ -11,7 +11,7 @@ export default function Component() {
           <Link className="text-gray-700 hover:text-gray-900" href="/">
             Home
           </Link>
-          <Link className="text-gray-700 hover:text-gray-900" href="/hospital/reservation">
+          <Link className="text-gray-700 hover:text-gray-900" href="/hospital/form">
             Reservation
           </Link>
           <Link className="text-gray-700 hover:text-gray-900" href="/contact-us">
@@ -40,40 +40,40 @@ export default function Component() {
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Departments</h2>
           <div className="grid grid-cols-3 gap-4">
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Dentistry
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Surgery
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Orthopedic
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation#">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form#">
               Pediatric
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Obstetrics & Gynecology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Ear, Nose & Throat
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Neurology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Hepatology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Nephrology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Oncology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Rheumatology
             </Link>
-            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/reservation">
+            <Link className="block bg-[#1b2945] text-white py-4 px-6 rounded-md text-center" href="/hospital/form">
               Cardiology
             </Link>
           </div>
